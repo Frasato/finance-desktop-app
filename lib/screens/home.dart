@@ -1,3 +1,4 @@
+import 'package:desktop_app/components/home_side.dart';
 import 'package:desktop_app/components/side_menu.dart';
 import 'package:desktop_app/constants/colors.dart';
 import 'package:flutter/material.dart';
@@ -17,12 +18,7 @@ class _HomeState extends State<Home> {
       body: Row(
         children: [
           SideMenu(),
-          Expanded(
-            flex: 3,
-            child: Column(
-              children: [],
-            ),
-          )
+          HomeSide(),
         ],
       ),
     );
