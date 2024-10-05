@@ -14,13 +14,16 @@ class SideButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: onPressed,
-      child: Row(
-        children: [
-          Icon(icon),
-          Text(buttonText)
-        ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 10, bottom: 5, top: 5, right: 10),
+      child: TextButton(
+        onPressed: onPressed,
+        child: Row(
+          children: [
+            Icon(icon),
+            Text(buttonText)
+          ],
+        ),
       ),
     );
   }
