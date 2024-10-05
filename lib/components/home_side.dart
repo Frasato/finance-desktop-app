@@ -1,5 +1,6 @@
 import 'package:desktop_app/components/home_side/header.dart';
 import 'package:desktop_app/components/home_side/last_operation.dart';
+import 'package:desktop_app/components/home_side/money_infos.dart';
 import 'package:flutter/material.dart';
 
 class HomeSide extends StatefulWidget {
@@ -18,6 +19,7 @@ class _HomeSideState extends State<HomeSide> {
         children: [
           Header(),
           LastOperation(),
+          MoneyInfos(),
         ],
       )
     );
