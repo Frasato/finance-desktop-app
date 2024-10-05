@@ -27,8 +27,6 @@ class _SideMenuState extends State<SideMenu> {
             children: [
               Column(
                 children: [
-                  const Text('Hello'),
-                  const Text('Frasato'),
                   SideButton(onPressed: (){}, buttonText: 'Home', icon: Icons.home,),
                   SideButton(onPressed: (){}, buttonText: 'Cash in', icon: Icons.keyboard_double_arrow_right_outlined,),
                   SideButton(onPressed: (){}, buttonText: 'Cash out', icon: Icons.keyboard_double_arrow_left_outlined,),
