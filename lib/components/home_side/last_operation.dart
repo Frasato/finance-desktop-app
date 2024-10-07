@@ -11,7 +11,18 @@ class _LastOperationState extends State<LastOperation> {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      children: [],
+      children: [
+        Text('Last Operation'),
+        Row(
+          children: [
+            Text('Frasato'),
+            Text('Food'),
+            Text('Potato Fries'),
+            Text('\$23,90'),
+            Text('03/10/2024'),
+          ],
+        )
+      ],
     );
   }
 }
