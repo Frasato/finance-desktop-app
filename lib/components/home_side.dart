@@ -18,6 +18,7 @@ class _HomeSideState extends State<HomeSide> {
       child: Padding(
         padding: EdgeInsets.only(top: 5, right: 10, bottom: 5, left: 10),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Header(),
             LastOperation(),
