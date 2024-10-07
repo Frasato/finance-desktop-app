@@ -18,9 +18,15 @@ class _MoneyInfosState extends State<MoneyInfos> {
             MoneyInfosItem(cost: '\$300,00', icon: Icons.lunch_dining, title: 'Food',),
             MoneyInfosItem(cost: '\$1200,00', icon: Icons.house, title: 'Home Bill',),
             MoneyInfosItem(cost: '\$600,00', icon: Icons.pedal_bike_rounded, title: 'Travels',),
-            MoneyInfosItem(cost: '\$125,00', icon: Icons.school, title: 'Learning',),
           ],
         ),
+        Column(
+          children: [
+            MoneyInfosItem(cost: '\$125,00', icon: Icons.school, title: 'Learning',),
+            MoneyInfosItem(cost: '\$25,00', icon: Icons.boy, title: 'Clouths',),
+            MoneyInfosItem(cost: '\$5,00', icon: Icons.attach_money_sharp, title: 'Others',),
+          ],
+        )
       ],
     );
   }
