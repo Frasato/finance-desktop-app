@@ -1,17 +1,31 @@
 import 'package:flutter/material.dart';
 
-class MoneyInfosItem extends StatefulWidget {
-  const MoneyInfosItem({super.key});
+class MoneyInfosItem extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String cost;
 
-  @override
-  State<MoneyInfosItem> createState() => _MoneyInfosItemState();
-}
+  const MoneyInfosItem({
+    super.key,
+    required this.cost,
+    required this.icon,
+    required this.title
+  });
 
-class _MoneyInfosItemState extends State<MoneyInfosItem> {
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [],
+    return Row(
+      children: [
+        Container(
+          child: Row(
+            children: [
+              Icon(icon),
+              Text(title),
+            ],
+          ),
+        ),
+        Text(cost),
+      ],
     );
   }
 }
