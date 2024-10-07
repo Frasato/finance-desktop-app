@@ -1,3 +1,4 @@
+import 'package:desktop_app/widgets/header_item.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatefulWidget {
@@ -12,8 +13,14 @@ class _HeaderState extends State<Header> {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        Text('Shalom Popular'),
-        Text('\$1700,00')
+        Text('Gabriel Frasato'),
+        Row(
+          children: [
+            HeaderItem(title: 'Credit', value: '\$300,00'),
+            HeaderItem(title: 'Negative', value: '\$100,00'),
+            HeaderItem(title: 'Positive', value: '\$600,00'),
+          ],
+        )
       ],
     );
   }
