@@ -10,8 +10,12 @@ class MoneyInfos extends StatefulWidget {
 class _MoneyInfosState extends State<MoneyInfos> {
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [],
+    return const Row(
+      children: [
+        Column(
+          children: [],
+        )
+      ],
     );
   }
 }
