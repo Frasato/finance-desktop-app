@@ -15,12 +15,15 @@ class _HomeSideState extends State<HomeSide> {
   Widget build(BuildContext context) {
     return const Expanded(
       flex: 4,
-      child: Column(
-        children: [
-          Header(),
-          LastOperation(),
-          MoneyInfos(),
-        ],
+      child: Padding(
+        padding: EdgeInsets.only(top: 5, right: 10, bottom: 5, left: 10),
+        child: Column(
+          children: [
+            Header(),
+            LastOperation(),
+            MoneyInfos(),
+          ],
+        ),
       )
     );
   }
